@@ -1,0 +1,67 @@
+<!--index.wxml-->
+<view class="page">
+  <view class="page-header">
+    <text>豆瓣日报</text>
+  </view>
+  <scroll-view class="page-body" scroll-y="true" style="width:100%" >
+    <view class="movie">
+      <view style="padding-left:40rpx">
+        <text>豆瓣視频</text>
+        <text class="title-right">首页/豆瓣視频/如是</text>
+      </view>
+      <view  wx:for="{{doubanVideo}}" wx:key="images">
+        <navigator class="item"  >
+          <image class="cover-img"src="{{item.cover}}"></image>
+          <view class="cover-text">
+            <text>{{item.title}}</text>
+            <text>{{item.start_time}}</text>
+          </view>
+        </navigator>
+      </view>
+      <view  wx:for="{{doubanVideo2}}" wx:key="images">
+        <navigator class="item"  >
+          <image class="cover-img"src="{{item.cover}}"></image>
+          <view class="cover-text">
+            <text>{{item.title}}</text>
+            <text>{{item.start_time}}</text>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="music"style="padding-top:30rpx">
+      <view style="padding-left:40rpx">
+        <text>豆瓣音樂</text>
+        <text class="title-right">首页/豆瓣音樂/豆瓣新碟榜</text>
+      </view>
+      <view class="cont">
+        <view  wx:for="{{doubanMusic}}" wx:key="picsrc">
+          <navigator class="item">
+            <text class="rate"> {{item.rate}}</text>
+            <image class="cover-img"src="{{item.picsrc}}"></image>
+            <view class="cover-text">
+              <text class="text-title">{{item.title}}</text>
+              <text >{{item.person}}</text>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+    <view class="music"style="padding-top:30rpx">
+      <view style="padding-left:40rpx">
+        <text>豆瓣時間</text>
+        <text class="title-right">首页/豆瓣時間/热门专栏</text>
+      </view>
+      <view class="cont">
+      <view  wx:for="{{doubanTime}}" wx:key="picsrc">
+        <navigator class="item">
+          <image class="cover-img time"src="{{item.picsrc}}"></image>
+          <view class="cover-text">
+            <text class="text-title">{{item.title}}</text>
+            <text class="tip">{{item.type}}</text>
+          </view>
+        </navigator>
+      </view>
+      </view>
+    </view> 
+  </scroll-view>  
+</view>

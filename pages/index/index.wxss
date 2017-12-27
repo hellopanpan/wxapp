@@ -1,0 +1,121 @@
+.page{
+  font-family:"Microsoft Yahei";
+  display:flex;
+  flex-direction: column
+}
+.page-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  border-bottom: 1px solid #666;
+}
+.scroll-x1{
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+  overflow:hidden; 
+}
+.scroll-x1 .scroll-item1{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.scroll-x1 .scroll-item1 image{
+  width: 100%;
+}
+.page-body{
+  display: flex;
+  flex: 1;
+  padding-top: 20rpx;
+  flex-direction: column;
+}
+.page-body .item{
+  display: flex;
+  padding:20rpx 40rpx;
+
+}
+.page-body .music .cont{
+  display: flex;
+  width:100%;
+  flex-direction: row;
+  flex-wrap: wrap
+} 
+.page-body .music .cont view{
+  flex: 1;
+  width:50%;
+}
+.page-body .music .item{
+  display: flex;
+  flex-direction: column;
+  padding:20rpx 40rpx;
+  box-sizing: border-box;
+  border-bottom: none;
+  position: relative;
+}
+.page-body .music .cont .cover-text{
+  flex: 1;
+  width:100%;
+}
+.page-body .music .cont .cover-text text{
+  padding: 3px;
+}
+.page-body .music .rate{
+  position: absolute;
+  padding:10rpx;
+  right: 70rpx;
+  bottom: 110rpx;
+  font-size:20rpx;
+  color:#fff;
+  border-radius: 50%;
+  background: red;
+}
+.page-body .music .cont .cover-text .tip{
+  color:#666;
+  padding:5rpx 10rpx;
+  border-radius:5rpx;
+  border: 2rpx solid #999;
+  display: inline-block;
+  margin-top:6rpx;
+
+}
+.page-body .music .cont .cover-text .text-title{
+  color: #333;
+  font-size: 24rpx;
+  height: 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.page-body .music .cover-img{
+  width:280rpx;
+  height:300rpx;
+  margin-right: 10px;
+
+}
+.page-body .music .cover-img.time{
+  width:280rpx;
+  height:360rpx;
+  margin-right: 10px;
+
+}
+.page-body .cover-img{
+  width:300rpx;
+  height:200rpx;
+  margin-right: 10px;
+
+}
+.page-body .cover-text{
+  flex: 1;
+}
+.page-body .cover-text text{
+  display: block;
+  padding:10px;
+  color:#666;
+  font-size:24rpx;
+}
+.title-right{
+  float: right;
+  font-size:20rpx;
+  padding:15rpx 60rpx 0 0rpx;
+  color:#999;
+}

@@ -1,0 +1,36 @@
+.xcontainer {
+ font-size: 14px;
+ padding:10rpx;
+ width:100%;
+ color: #333
+}
+.table {
+ border:1px solid #dadada;
+ border-right: 0;
+ border-bottom: 0;
+ width: 97%;
+}
+.tr {
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+}
+.th,.td {
+ padding: 10px;
+ border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width:20%;
+}
+.th,.td.ur {
+  width:60%;
+  word-break: break-all
+}
+.th {
+  font-weight: 400;
+  width:20%;
+  background-color: #dadada
+}
+.th.ur{
+  width:60%;
+}
